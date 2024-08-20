@@ -14,6 +14,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 a {
   font-family: inherit;
 }
@@ -55,8 +62,24 @@ a {
   text-decoration: none;
 }
 
+.container-navigation {
+  display: flex;
+  padding: 0 70;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .navigation-header-list {
   list-style-type: none;
+  margin: 0;
+  margin-right: 285px;
+  padding: 0;
+  width: 507px;
+  max-width: 550px;
+}
+
+.navigation-header-logo {
+  margin-left: 30px;
 }
 
 .navigation-header-link {
@@ -69,9 +92,16 @@ a {
 
 .navigation-user-list {
   list-style-type: none;
+  margin: 0;
+  max-width: 290x;
+  padding: 0;
+  width: 268px;
 }
 
 .button-navigation {
+  width: 160px;
+  height: 36px;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   background-color: #756157;
@@ -84,6 +114,12 @@ a {
 
 /* Body */
 
+.container-advantage-item {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .advantages-lead {
   background-color: #FFFFFF;
 }
@@ -92,31 +128,42 @@ a {
   background-color: #FFFFFF;
 }
 
-.advantages-list {
-padding: 0;
-margin: 0;
-}
-
 .infrastructure {
   background-color: #FFFFFF;
 }
 
-.infrastructure-list {
+.container-infrastructure {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
   padding: 0;
+}
+
+.infrastructure-list {
   margin: 0;
 }
 
-.main {
-  background-color: #F2F2F2;
+main {
+  background-color: #000000;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 body {
+  margin: 0;
+  margin-right: 8px;
+  margin-left: 8px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
   background-color: #F2F2F2;
   color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h1 {
@@ -169,6 +216,12 @@ h1 {
   background-color: #FFFFFF;
 }
 
+.container-filter {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-list {
   list-style-type: none;
 }
@@ -204,6 +257,10 @@ h1 {
   border-color: #000000;
   }
 
+  .container-product {
+    display: flex;
+  }
+
   .product-item .button {
     font-size: 16px;
     line-height: 20px;
@@ -213,8 +270,6 @@ h1 {
 
   .button-details {
     background-color: #756157;
-    text-decoration: none;
-    color: inherit;
   }
 
   .product-list {
@@ -262,8 +317,18 @@ h1 {
   background-color: #7DB54F;
   }
 
-  .pagination-list {
+  .container-pagination {
+    display: flex;
+    flex-direction: row;
     margin: 0;
+    padding: 0;
+  }
+
+  .pagination-list {
+    width: 1060px;
+    margin: 0;
+    list-style-type: none;
+
   }
 
   .pagination-link {
@@ -310,6 +375,8 @@ h1 {
   }
 
   .advantages-list {
+    padding: 0;
+    margin: 0;
     text-align: center;
     list-style-type: none;
   }
@@ -387,12 +454,35 @@ h1 {
   background-color: #FFFFFF;
 }
 
+.container-footer {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 0;
+}
+
 .social-list {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 41.5px;
+}
+
+.contacts {
+  width: 720px;
+  text-align: center;
 }
 
 .contacts-phone {
   font-size: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.author {
+  width: 115px;
+  margin-left: 41.5px;
 }
